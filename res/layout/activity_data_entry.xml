@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Spinner android:id="@+id/building" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/building_array"
+        android:prompt="@string/building_prompt"/>
+    
+    <Spinner android:id="@+id/floor" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/floor_array"
+        android:prompt="@string/floor_prompt"/>
+    
+    <EditText android:id="@+id/spot_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+    
+    <Button android:id="@+id/populate_db_on_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"/>
+    
+    
+
+</LinearLayout>

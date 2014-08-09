@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+        
+    
+    		    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+			<TextView android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"
+		  		    android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:text="@string/spot_no" />
+		  	<TextView android:id="@+id/release_spot_no"
+		  	    	android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+		  	<TextView android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"
+		  		    android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:text="@string/floor"/>
+		  	<TextView android:id="@+id/release_floor"
+		  	    	android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"/>
+	</LinearLayout>
+      
+     <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">  
+	  		<TextView android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"
+		  		    android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:text="@string/building" />
+		  	<TextView android:id="@+id/release_building"
+		  	    	android:textColor="#000000"
+		  		    android:textSize="30sp"
+		  		    android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content" />
+	</LinearLayout>
+    
+  		
+    	<Button android:id="@+id/release"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/release_parking"
+	        android:background="@drawable/button"
+        	android:padding="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_gravity="center_horizontal"
+	        android:onClick="releaseParking"/>
+
+</LinearLayout>
